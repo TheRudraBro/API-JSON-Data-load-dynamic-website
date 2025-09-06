@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+#post-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.post-card p{
+    text-align: justify;
+}
+
+    </style>
 </head>
 <body>
   <button onclick="loadData()">
 Load Data
   </button>
+<button onclick="loadPosts()">Load Posts</button>
 
+<!-- <ul id="post-container"></ul> -->
+ <div id="post-container">
+
+ </div>
 
 
     <script src="script.js"></script>
+    <script src="json.js"></script>
+    <script src="post.js"></script>
+    <script src="display.js"></script>
 </body>
 
 </html>
